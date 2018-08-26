@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a, b;
+    while(scanf("%d%d",&a,&b) == 2)
+    {
+        if(a == 0 && b == 0)
+        {
+            break;
+        }
+        int cnt=0;
+        for(int i=a;i<=b;i++)
+        {
+            int p=sqrt(i);
+            if(p*p==i)
+            {
+                cnt++;
+            }
+        }
+        printf("%d\n",cnt);
+    }
+    return 0;
+}
